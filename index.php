@@ -63,7 +63,7 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'home';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cloud Therapy</title>
+    <title>Cloud</title>
     <style>
     /* General Styles */
     body {
