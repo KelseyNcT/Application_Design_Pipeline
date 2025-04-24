@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         DOCKER_HUB_CREDENTIALS = credentials('docker-hub-credentials')
-        IMAGE_NAME = 'kelseynct/my-app'  // match your Docker Hub repo
+        IMAGE_NAME = 'kelseymurz/my-app'  // match your Docker Hub repo
     }
 
     stages {
