@@ -252,7 +252,7 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'home';
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required><br><br>
 
-                <label for="email">email:</label>
+                <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required><br><br>
 
                 <label for="age">Age:</label>
