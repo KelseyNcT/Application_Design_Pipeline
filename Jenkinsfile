@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: 'master', url: 'https://github.com/KelseyNcT/Application_Design_Pipeline.git'
+                git branch: 'main', url: 'https://github.com/KelseyNcT/Application_Design_Pipeline.git'
             }
         }
 
