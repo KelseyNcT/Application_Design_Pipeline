@@ -1,17 +1,12 @@
-# Use a base image
-FROM node:18  # or python:3.10 or openjdk depending on your tech
 
-# Set working dir
-WORKDIR /app
+# Use an official Nginx image as base
+FROM nginx:alpine
 
-# Copy everything
-COPY . .
+# Copy the webpage files into the container
+COPY . /usr/share/nginx/html/
 
-# Install deps
-RUN npm install   # or pip install -r requirements.txt or gradle/maven
+# Expose port 80
+EXPOSE 80
 
-# Expose port
-EXPOSE 80  # or whatever your app uses
-
-# Run the app
-CMD ["npm", "start"]  # or ["python", "app.py"], ["java", "-jar", "app.jar"]
+# Start the Nginx server
+CMD ["nginx", "-g", "daemon off;"]
