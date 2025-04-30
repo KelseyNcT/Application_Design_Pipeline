@@ -1,12 +1,51 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Static Site</title>
+  <title>Kelsey's All-in-One Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #7b2ff7, #f107a3);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+      background: rgba(0, 0, 0, 0.2);
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    }
+
+    button {
+      background: white;
+      color: #7b2ff7;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #f107a3;
+      color: white;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello, world. I'm free from PHP.</h1>
+  <div class="container">
+    <h1>Hey, I'm Kelsey 👋</h1>
+    <p>This is my first web page and I'm owning it—all in one file.</p>
+    <button>Click Me</button>
+  </div>
 </body>
 </html>
